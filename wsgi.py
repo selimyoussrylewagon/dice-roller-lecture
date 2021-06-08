@@ -7,4 +7,4 @@ app = Flask("another-name")
 def home():
     return jsonify({"roll": random.randint(1, 6)})
 
-
+print("ok")
