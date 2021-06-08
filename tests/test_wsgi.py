@@ -8,7 +8,7 @@ class TestViews(TestCase):
         return app
 
     def test_one_roll(self):
-        roll = self.client.get("/roll").json["roll"]
+        roll = self.client.get("/rol").json["roll"]
         self.assertIsInstance(roll, int)
         self.assertGreater(roll, 0)
         self.assertLess(roll, 7)
